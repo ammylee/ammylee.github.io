@@ -34,7 +34,7 @@
         <p>Верстка на HTML и CSS <br>Разработка сайтов под ключ</p>
       </div>
       </div>
-     <a class="main-down" href="#portfolio"><i class="icon-down"></i></a>
+     <a class="main-down slowly" href="#portfolio"><i class="icon-down"></i></a>
     </div>
 
 
@@ -118,11 +118,11 @@
     </script>
     <script>
    $(document).ready(function(){
-   	$(".slowly").on("click", function (event){
+   	$(".slowly").on("click", function (event) {
    		event.preventDefault();
    		var id = $(this).attr('href'),
    		top = $(id).offset().top;
-   		$('body,html').animate({scrollTop: top}, 1500);
+   		$('body,html').animate({scrollTop: top}, 800);
    	});
    });
     </script>
